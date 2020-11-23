@@ -1,9 +1,10 @@
 import socket
 import socket
+import sys
 
 HEADER = 64
-PORT = 5000
-SERVER = "192.168.11.221"
+PORT = 5050
+SERVER = str(sys.argv[1])
 ADDR = (SERVER, PORT)
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"
